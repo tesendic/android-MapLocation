@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MapLocation.iml" filepath="$PROJECT_DIR$/MapLocation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapLocation/MapLocation.mapLocation.iml" filepath="$PROJECT_DIR$/.idea/modules/mapLocation/MapLocation.mapLocation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapLocation/MapLocation.mapLocation.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mapLocation/MapLocation.mapLocation.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapLocation/MapLocation.mapLocation.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mapLocation/MapLocation.mapLocation.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapLocation/MapLocation.mapLocation.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mapLocation/MapLocation.mapLocation.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapLocationFromContacts/MapLocation.mapLocationFromContacts.iml" filepath="$PROJECT_DIR$/.idea/modules/mapLocationFromContacts/MapLocation.mapLocationFromContacts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapLocationFromContacts/MapLocation.mapLocationFromContacts.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mapLocationFromContacts/MapLocation.mapLocationFromContacts.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapLocationFromContacts/MapLocation.mapLocationFromContacts.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mapLocationFromContacts/MapLocation.mapLocationFromContacts.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapLocationFromContacts/MapLocation.mapLocationFromContacts.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mapLocationFromContacts/MapLocation.mapLocationFromContacts.unitTest.iml" />
+    </modules>
+  </component>
+</project>
