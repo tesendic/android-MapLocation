@@ -9,7 +9,11 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 // Several Activity lifecycle methods are instrumented to emit LogCat output
 // so you can follow this class' lifecycle
@@ -24,9 +28,16 @@ public class MapLocation extends AppCompatActivity {
         // Required call through to Activity.onCreate()
         // Restore any saved instance state
         super.onCreate(savedInstanceState);
-        
+        EdgeToEdge.enable(this);
+
         // Set content view
         setContentView(R.layout.main);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
 
         // Initialize UI elements
         final EditText addrText = (EditText) findViewById(R.id.location);

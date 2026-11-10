@@ -15,9 +15,14 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -45,7 +50,13 @@ public class MapLocationFromContactsActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		EdgeToEdge.enable(this);
 		setContentView(R.layout.main);
+		ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+			Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+			v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+			return insets;
+		});
 
 		if (ContextCompat.checkSelfPermission(MapLocationFromContactsActivity.this, Manifest.permission.READ_CONTACTS)
 				!= PackageManager.PERMISSION_GRANTED) {
